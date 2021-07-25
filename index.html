@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="neon-button">Neon</button>
+
+
+<script>
+    const button = document.querySelector('.neon-button')
+    button.addEventListener('click', toggleClass)
+
+
+    function toggleClass(event) {
+        event.target.classList.add('active');
+        setTimeout(() => {
+            event.target.classList.remove('active');
+        }, 100);
+    }
+</script>
+</body>
+</html>
